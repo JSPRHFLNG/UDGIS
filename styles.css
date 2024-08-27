@@ -1,0 +1,135 @@
+/* Kartan */
+html, body, #viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Avdelning för vandring- och cykelleder */
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    z-index: 10;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+}
+
+#leder {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* Avdelning för verktygsfältet */
+#control-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sprider ut innehållet */
+}
+
+#search-container {
+    display: flex;
+    align-items: center; /* Centrera innehållet vertikalt */
+}
+
+#search-input {
+    width: 200px;
+    padding: 5px;
+}
+
+#clearPOIButton {
+    margin-left: 20px; /* Avstånd från sökknappen till rensa-knappen */
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#clearPOIButton:hover {
+    background-color: #0056b3; 
+}
+
+
+
+
+
+/* Avdelning för att lägga till egen POI session */
+#addPOIForm {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#poiControls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 10px; /* Avstånd mellan knapparna */
+}
+
+
+
+#toggleAddPOIModeButton, #addPOIButton {
+    background-color: #28a745; /* Grön färg för knappar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#toggleAddPOIModeButton.active {
+    background-color: #FF0000; /* Röd färg när aktiv */
+}
+
+#toggleAddPOIModeButton:hover, #addPOIButton:hover {
+    background-color: #0056b3; /* Ändra bakgrundsfärg vid hover */
+}
+
+
+
+
+
+
+
+  

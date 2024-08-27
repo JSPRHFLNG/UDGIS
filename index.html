@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Projektuppgift</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://js.arcgis.com/4.29/"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="viewDiv"></div>
+    <div class="controls">
+        <p id="leder">Här kan du se vilka leder som finns</p>
+        <button id="toggleBlue">Leder utan höjdökning</button>
+        <button id="toggleGreen">Slingor</button>
+        <button id="togglePurple">Leder med höjdökning</button>
+    </div>
+
+    <div id="control-container">
+      <div id="search-container">
+          <input type="text" id="search-input" placeholder="Sök POI">
+      </div>
+      <button id="clearPOIButton">Rensa POI</button>
+    </div>
+
+
+    <div id="addPOIForm" style="display:none;">
+      <label for="poiName">Namn:</label>
+      <input type="text" id="poiName" name="poiName">
+      <label for="poiType">Typ:</label>
+      <input type="text" id="poiType" name="poiType">
+      <button id="savePOIButton">Spara POI</button>
+    </div>
+  
+    <div id="poiControls">
+      <button id="toggleAddPOIModeButton">Starta session för egen POI</button>
+      <button id="addPOIButton">Lägg till POI</button>
+    </div>
+  
+  
+  
+
+    
+
+</body>
+</html>
